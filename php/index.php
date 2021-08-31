@@ -13,11 +13,11 @@
     <meta property="og:description" content="La page d'accueil des avocats de France.">
     <meta property="og:image" content="./assets/images/logo.png">
 
-    <link rel="icon" href="./assets/favicon.ico">
-    <link rel="apple-touch-icon" href="./assets/logo.png">
+    <link rel="icon" href="assetsavicon.ico">
+    <link rel="apple-touch-icon" href="assets/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="stylesain.css">
 
 </head>
 
@@ -33,7 +33,7 @@
 
 <div class="container">
 
-    <img src="./assets/images/logo.png" class="logo" data-aos="zoom-in">
+    <img src="assetsmages/logo.png" class="logo" data-aos="zoom-in">
     <nav class="navigation">
         <ul class="navigationOptions">
             <a href="">
@@ -62,8 +62,8 @@
 
         <div class="content">
             <div class="contentHolder">
-                <img src="./assets/images/blackcircle.png" alt="Black circle image" class="blackCircle" data-aos="zoom-in">
-                <img src="./assets/images/scientists.png" alt="Image of people examining earth."
+                <img src="assetsmages/blackcircle.png" alt="Black circle image" class="blackCircle" data-aos="zoom-in">
+                <img src="assetsmages/scientists.png" alt="Image of people examining earth."
                      data-aos="fade-right">
                 <h4 class="contentTitle" data-aos="fade-up">L’actualité au prisme du droit</h4>
                 <div class="contentText">
@@ -82,7 +82,7 @@
 
         <div class="content multipleContent">
             <div class="contentHolder">
-                <img src="./assets/images/conseil.png" alt="Image of conseil constitutionnel." data-aos="fade-right">
+                <img src="assetsmages/conseil.png" alt="Image of conseil constitutionnel." data-aos="fade-right">
                 <h4 class="contentTitle" data-aos="fade-up">L’actualité au prisme du droit</h4>
                 <div class="contentText">
                     <h4 class="contentDate" data-aos="fade-up">10 AOÛT 2021</h4>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="contentHolder">
-                <img src="./assets/images/espagne.png" alt="Image of spanish flag." data-aos="fade-left">
+                <img src="assetsmages/espagne.png" alt="Image of spanish flag." data-aos="fade-left">
                 <h4 class="contentTitle" data-aos="fade-up">L’actualité au prisme du droit</h4>
                 <div class="contentText">
                     <h4 class="contentDate" data-aos="fade-up">10 AOÛT 2021</h4>
@@ -119,20 +119,20 @@
 <section class="presidents">
     <div class="container">
         <h1 class="sectionTitle" data-aos="fade-right">Nos présidents d’honneur</h1>
-        <img src="./assets/images/blackandwhite-cirlcle.png" alt="Black and White circle image" class="blackAndWhiteCircle" data-aos="zoom-in" >
+        <img src="assetsmages/blackandwhite-cirlcle.png" alt="Black and White circle image" class="blackAndWhiteCircle" data-aos="zoom-in" >
         <div class="president">
-            <img src="./assets/images/baraduc.png" alt="Image of Elisabeth Baraduc." data-aos="fade-right">
+            <img src="assetsmages/baraduc.png" alt="Image of Elisabeth Baraduc." data-aos="fade-right">
             <h2 class="presidentName" data-aos="fade-up">Elisabeth Baraduc</h2>
             <p class="presidentDescription" data-aos="fade-up">Avocat au Conseil d’Etat et à la Cour de cassation -
                 Baraduc&Duhamel</p>
         </div>
         <div class="president">
-            <img src="./assets/images/lagarde.png" alt="Image of Christine Lagarde." data-aos="fade-up">
+            <img src="assetsmages/lagarde.png" alt="Image of Christine Lagarde." data-aos="fade-up">
             <h2 class="presidentName" data-aos="fade-up">Christine Lagarde</h2>
             <p class="presidentDescription" data-aos="fade-up">Présidente de la Banque centrale européenne (BCE)l</p>
         </div>
         <div class="president">
-            <img src="./assets/images/juniac.png" alt="Image of Alexandre de Juniac." data-aos="fade-left">
+            <img src="assetsmages/juniac.png" alt="Image of Alexandre de Juniac." data-aos="fade-left">
             <h2 class="presidentName" data-aos="fade-up">Alexandre de Juniac</h2>
             <p class="presidentDescription" data-aos="fade-up">Directeur Général de l’Association Internationale du
                 Transport Aérien</p>
@@ -140,7 +140,7 @@
     </div>
     <div class="discover interactable" data-aos="fade-up">
         <p>Découvrir les membres du club</p>
-        <img src="./assets/arrow-right.png" alt="Right image arrow">
+        <img src="assetsrrow-right.png" alt="Right image arrow">
     </div>
 </section>
 
@@ -148,7 +148,7 @@
     <div class="container">
         <h1 class="sectionTitle" data-aos="fade-right">La semaine juridique</h1>
         <div class="juridiqueContainer">
-            <img src="./assets/images/reynaud.png" alt="Should be video of Reynaud" data-aos="fade-right">
+            <img src="assetsmages/reynaud.png" alt="Should be video of Reynaud" data-aos="fade-right">
             <div class="contentJuridiqueText">
                 <h4 class="contentDate" data-aos="fade-up">10 AOÛT 2021</h4>
                 <h1 class="contentTextTitle" data-aos="fade-up">Sanctions internationales, par Gaëlle Filhol
@@ -160,7 +160,7 @@
                     l’arbitrage international.</h4>
                 <div class="discoverButton interactable" data-aos="fade-up">
                     <p>Découvrir l'article</p>
-                    <img src="./assets/arrow-right.png" alt="Right image arrow">
+                    <img src="assetsrrow-right.png" alt="Right image arrow">
                 </div>
 
             </div>
@@ -177,10 +177,10 @@
                     fournissent un terreau singulièrement fertile à des poursuites concomitantes</h4>
                 <div class="discoverButton interactable" data-aos="fade-up">
                     <p>Découvrir l'article</p>
-                    <img src="./assets/arrow-right.png" alt="Right image arrow">
+                    <img src="assetsrrow-right.png" alt="Right image arrow">
                 </div>
             </div>
-            <img src="./assets/images/benguigui.png" alt="Should be video of Benguigui" data-aos="fade-up">
+            <img src="assetsmages/benguigui.png" alt="Should be video of Benguigui" data-aos="fade-up">
         </div>
     </div>
 </section>
@@ -188,7 +188,7 @@
 <section class="club">
     <div class="container">
         <h1 class="sectionTitle" data-aos="fade-right">Le club des juristes</h1>
-        <img src="./assets/images/greencircle.png" alt="Greel Circle Image." class="greenCircle" data-aos="zoom-in">
+        <img src="assetsmages/greencircle.png" alt="Greel Circle Image." class="greenCircle" data-aos="zoom-in">
         <div class="clubTextBox" data-aos="fade-left">
             <div class="clubText">
                 <p class="clubDescription">Créé en 2007, le Club des juristes est <strong>le premier think tank
@@ -205,7 +205,7 @@
                         représentants d’entreprises, etc.</strong></p>
                 <div class="discoverButton interactable">
                     <p>En savoir plus</p>
-                    <img src="./assets/arrow-right.png" alt="Right image arrow">
+                    <img src="assetsrrow-right.png" alt="Right image arrow">
                 </div>
             </div>
         </div>
@@ -218,15 +218,15 @@
         <h1 class="sectionTitle" data-aos="fade-right">Nos partenaires</h1>
         <div class="partnerBox">
             <div class="partnerLogos">
-                <img src="./assets/images/airfrance.png" alt="Logo of Airfrance" data-aos="fade-right">
-                <img src="./assets/images/accor.png" alt="Logo of Accor Hotels" data-aos="fade-up">
-                <img src="./assets/images/francetv.png" alt="Logo of France TV" data-aos="fade-left">
-                <img src="./assets/images/edf.png" alt="Logo of EDF" data-aos="fade-right">
-                <img src="./assets/images/oreal.png" alt="Logo of l'Oreal" data-aos="fade-left">
+                <img src="assetsmages/airfrance.png" alt="Logo of Airfrance" data-aos="fade-right">
+                <img src="assetsmages/accor.png" alt="Logo of Accor Hotels" data-aos="fade-up">
+                <img src="assetsmages/francetv.png" alt="Logo of France TV" data-aos="fade-left">
+                <img src="assetsmages/edf.png" alt="Logo of EDF" data-aos="fade-right">
+                <img src="assetsmages/oreal.png" alt="Logo of l'Oreal" data-aos="fade-left">
             </div>
             <div class="discoverButton interactable" data-aos="fade-up">
                 <p>Voir tous les partenaires</p>
-                <img src="./assets/arrow-right.png" alt="Right image arrow">
+                <img src="assetsrrow-right.png" alt="Right image arrow">
             </div>
         </div>
     </div>
@@ -240,10 +240,10 @@
         <div class="navigationButtons">
 
             <div class="previousArrow interactable" data-aos="fade-right">
-                <img src="./assets/arrow-right.png" alt="Right image arrow" >
+                <img src="assetsrrow-right.png" alt="Right image arrow" >
             </div>
             <div class="nextArrow interactable" data-aos="fade-left">
-                <img src="./assets/arrow-right.png" alt="Right image arrow" >
+                <img src="assetsrrow-right.png" alt="Right image arrow" >
             </div>
 
         </div>
@@ -253,7 +253,7 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <div class="video">
-                            <img src="./assets/images/video1.png" alt="First video background.">
+                            <img src="assetsmages/video1.png" alt="First video background.">
                             <h4 class="contentDate">10 août 2021</h4>
                             <a href="">Défense d’afficher – La ville
                                 de Paris contre l’affichage sauvage</a>
@@ -261,7 +261,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="video">
-                            <img src="./assets/images/video02.png" alt="Second video background.">
+                            <img src="assetsmages/video02.png" alt="Second video background.">
                             <h4 class="contentDate">10 août 2021</h4>
                             <a href="">Réforme législative du droit d’accès aux archives
                                 « secret-défense » : l’apport de la loi « PTAR » du 30 juillet 2021</a>
@@ -269,7 +269,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="video">
-                            <img src="./assets/images/video03.png" alt="Third video background.">
+                            <img src="assetsmages/video03.png" alt="Third video background.">
                             <h4 class="contentDate">10 août 2021</h4>
                             <a href="">La loi Egalim n’a pas résolu les relations entre les agriculteurs et la grande
                                 distribution</a>
@@ -332,7 +332,7 @@
 
 <footer class="footer">
     <div class="container">
-        <img src="./assets/images/logo.png" alt="The website logo.">
+        <img src="assetsmages/logo.png" alt="The website logo.">
         <a href="" class="interactable">Toute l'actu</a>
         <a href="" class="interactable">Le club</a>
         <a href="" class="interactable">Publication</a>
@@ -345,8 +345,8 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
-<script src="./scripts/cursor.js"></script>
-<script src="./scripts/main.js"></script>
+<script src="scriptsursor.js"></script>
+<script src="scriptsain.js"></script>
 
 
 </body>
