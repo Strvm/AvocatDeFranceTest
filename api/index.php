@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="./assets/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
