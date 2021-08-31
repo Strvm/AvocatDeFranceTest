@@ -12,8 +12,6 @@ html, body {
 }
 
 
-
-
 .container {
   margin: 0 auto;
   width: 60vw;
@@ -570,6 +568,7 @@ CURSOR
   .president {
     flex-basis: 100% !important;
     text-align: center;
+
     img {
       width: 100%;
     }
@@ -648,7 +647,6 @@ CURSOR
   }
 
 
-
   .navContainer {
     width: 60vw;
   }
@@ -661,7 +659,7 @@ CURSOR
     }
   }
 
-  .blackAndWhiteCircle, .greenCircle, .blackCircle{
+  .blackAndWhiteCircle, .greenCircle, .blackCircle {
     display: none;
   }
 

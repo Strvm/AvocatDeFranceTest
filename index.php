@@ -68,7 +68,8 @@
 
         <div class="content">
             <div class="contentHolder">
-                <img src="./assets/images/blackcircle.png" alt="Black circle image" class="blackCircle" data-aos="zoom-in">
+                <img src="./assets/images/blackcircle.png" alt="Black circle image" class="blackCircle"
+                     data-aos="zoom-in">
                 <img src="./assets/images/scientists.png" alt="Image of people examining earth."
                      data-aos="fade-right">
                 <h4 class="contentTitle" data-aos="fade-up">L’actualité au prisme du droit</h4>
@@ -125,7 +126,8 @@
 <section class="presidents">
     <div class="container">
         <h1 class="sectionTitle" data-aos="fade-right">Nos présidents d’honneur</h1>
-        <img src="./assets/images/blackandwhite-cirlcle.png" alt="Black and White circle image" class="blackAndWhiteCircle" data-aos="zoom-in" >
+        <img src="./assets/images/blackandwhite-cirlcle.png" alt="Black and White circle image"
+             class="blackAndWhiteCircle" data-aos="zoom-in">
         <div class="president">
             <img src="./assets/images/baraduc.png" alt="Image of Elisabeth Baraduc." data-aos="fade-right">
             <h2 class="presidentName" data-aos="fade-up">Elisabeth Baraduc</h2>
@@ -246,10 +248,10 @@
         <div class="navigationButtons">
 
             <div class="previousArrow interactable" data-aos="fade-right">
-                <img src="./assets/arrow-right.png" alt="Right image arrow" >
+                <img src="./assets/arrow-right.png" alt="Right image arrow">
             </div>
             <div class="nextArrow interactable" data-aos="fade-left">
-                <img src="./assets/arrow-right.png" alt="Right image arrow" >
+                <img src="./assets/arrow-right.png" alt="Right image arrow">
             </div>
 
         </div>
@@ -331,7 +333,8 @@
                 <textarea type="textarea" name="message" placeholder="Votre message" required></textarea>
             </div>
         </form>
-        <input type="submit" name="submit" form="contactForm" class="submitContactForm interactable" data-aos="fade-up"/>
+        <input type="submit" name="submit" form="contactForm" class="submitContactForm interactable"
+               data-aos="fade-up"/>
 
     </div>
 </section>
@@ -360,6 +363,7 @@
 
 
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -381,26 +385,26 @@ if (isset($_POST)) {
 
         $mail = new PHPMailer(true);
         try {
-        //Server settings
-        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'avocatdefrancetestsite@gmail.com';                     //SMTP username
-        $mail->Password   = 'AvocatDeFrance';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            //Server settings
+            //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+            $mail->isSMTP();                                            //Send using SMTP
+            $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+            $mail->Username = 'avocatdefrancetestsite@gmail.com';                     //SMTP username
+            $mail->Password = 'AvocatDeFrance';                               //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-        $mail->setFrom($email, $name . " " . $surname);
-        $mail->addAddress($email, $receiver);     //Add a recipient
-        $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->setFrom($email, $name . " " . $surname);
+            $mail->addAddress($email, $receiver);     //Add a recipient
+            $mail->isHTML(true);                                  //Set email format to HTML
 //Content
-        $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Email en provenance du site Avocat de France.';
-        $mail->Body    = "Ce message provient de " . $receiver . ": " .$message;
-        $mail->AltBody = "Ce message provient de " . $receiver . ": " .$message;
+            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->Subject = 'Email en provenance du site Avocat de France.';
+            $mail->Body = "Ce message provient de " . $receiver . ": " . $message;
+            $mail->AltBody = "Ce message provient de " . $receiver . ": " . $message;
 
-        $mail->send();
+            $mail->send();
             echo 'Message has been sent';
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
