@@ -4,13 +4,13 @@ html, body {
   padding: 0;
   width: 100vw;
   min-height: 100%;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   cursor: none;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  //position: relative;
   //z-index: -1;
 }
+
 
 
 
@@ -25,11 +25,22 @@ html, body {
   }
 }
 
+.navContainer {
+  margin: 0 auto;
+  width: 75vw;
+
+  .logo {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+}
+
 
 .navigation {
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 
 
   ul {
@@ -129,7 +140,9 @@ html, body {
 
   }
 
-
+  img {
+    max-width: 280px;
+  }
 
   .president {
     flex-basis: 33%;
@@ -229,7 +242,7 @@ html, body {
 
   .clubTextBox {
     background-color: #B3DEC1;
-    width: 60%;
+    width: 100%;
     height: 500px;
     display: flex;
     justify-content: space-evenly;
@@ -284,9 +297,10 @@ html, body {
 
 
 .videos {
-  .swiper{
+  .swiper {
     height: 525px;
   }
+
   .container {
     max-height: 70%;
     overflow: hidden;
@@ -316,7 +330,7 @@ html, body {
 }
 
 .previousArrow {
-  transform: scaleX(-1);
+  transform: scaleX(-1) !important;
 }
 
 .navigationButtons {
@@ -423,6 +437,7 @@ html, body {
 
 .footer {
   padding-bottom: 150px;
+
   .container {
     display: flex;
     flex-direction: row;
@@ -443,7 +458,8 @@ CURSOR
 
 .cursor-container {
   z-index: 10;
-  pointer-events:none;
+  pointer-events: none;
+
   .pointer {
     z-index: 10;
     width: 5pt;
@@ -458,7 +474,7 @@ CURSOR
   }
 
   .cursor-wrapper {
-    pointer-events:none;
+    pointer-events: none;
     z-index: 10;
     // z-index: 1;
     position: absolute;
@@ -471,7 +487,7 @@ CURSOR
 
 
     .cursor {
-      pointer-events:none;
+      pointer-events: none;
       z-index: 10;
       width: 30pt;
       height: 30pt;
@@ -483,29 +499,29 @@ CURSOR
   }
 }
 
-.blackCircle{
+.blackCircle {
   position: absolute;
   z-index: -1;
   width: 200px !important;
   height: 200px;
-  top: 60%;
-  left: 93%;
+  top: 305px;
+  left: 90%;
 }
 
-.blackAndWhiteCircle{
+.blackAndWhiteCircle {
   position: absolute;
   width: 300px;
   height: 300px;
-  top: 258%;
+  top: 2778px;
   left: 81%;
   z-index: 1;
 }
 
-.greenCircle{
+.greenCircle {
   position: absolute;
   width: 250px;
   height: 250px;
-  top: 380%;
+  top: 4550px;
   left: 21%;
   z-index: 1;
 }
@@ -514,7 +530,7 @@ CURSOR
 //Responsive
 @media screen and (max-width: 1000px) {
 
-  .logo{
+  .logo {
     position: relative !important;
     top: unset !important;
     left: unset !important;
@@ -524,112 +540,129 @@ CURSOR
     margin-bottom: 10px;
   }
 
-  .navigation{
-    .dot{
+  .navigation {
+    .dot {
       display: none;
     }
-    ul{
+
+    ul {
       padding: 0;
     }
 
-    .navigationOptions{
+    .navigationOptions {
 
       text-align: center;
       flex-direction: column;
     }
   }
 
-  .multipleContent{
+  .multipleContent {
     flex-direction: column;
   }
-  .contentHolder{
+  .contentHolder {
     width: auto;
   }
 
-  .contentText{
+  .contentText {
     width: 100%;
   }
 
-  .president{
+  .president {
     flex-basis: 100% !important;
-    img{
+    text-align: center;
+    img {
       width: 100%;
     }
   }
 
-  .juridiqueContainer{
+  .juridiqueContainer {
     flex-direction: column;
     align-items: normal;
     margin-bottom: 100px;
 
-    .discoverButton{
+    .discoverButton {
       margin-bottom: 30px;
     }
   }
 
 
-  .club{
-    .container{
+  .club {
+    .container {
       flex-direction: column;
       justify-content: normal;
     }
 
-    .clubTextBox{
+    .clubTextBox {
       height: auto;
       width: 100%;
 
-      .discoverButton{
+      .discoverButton {
         margin: 0 auto;
       }
     }
   }
 
-  .partners{
-    .partnerLogos{
+  .partners {
+    .partnerLogos {
       flex-direction: column;
       align-content: center;
 
-      img{
+      img {
         max-width: none;
       }
     }
   }
 
-  .videos{
-    .container{
+  .videos {
+    .container {
       overflow: visible;
       margin-bottom: 260px;
     }
 
-    .video{
+    .video {
       max-width: 100%;
     }
 
-    .navigationButtons{
+    .navigationButtons {
       margin: 0 -15%;
     }
   }
 
-  .footer{
-    .container{
+  .footer {
+    .container {
       flex-direction: column;
-      a{
+
+      a {
         margin: 10px;
       }
     }
   }
 
-  .cursor-container{
+  .cursor-container {
     display: none;
   }
 
-  .blackAndWhiteCircle{
+  .blackAndWhiteCircle {
     top: 429%;
     transform: rotate(241deg) !important;
   }
 
-  .greenCircle{
-    top: 1030%;
-    left: -42%;
+
+
+  .navContainer {
+    width: 60vw;
   }
+
+  .navigation ul {
+    align-content: center;
+
+    li {
+      margin-right: 0;
+    }
+  }
+
+  .blackAndWhiteCircle, .greenCircle, .blackCircle{
+    display: none;
+  }
+
 }

@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <title>Les avocats de France</title>
     <meta name="description" content="La page d'accueil des avocats de France.">
     <meta name="author" content="Roméo PHILLIPS">
@@ -13,11 +14,11 @@
     <meta property="og:description" content="La page d'accueil des avocats de France.">
     <meta property="og:image" content="./assets/images/logo.png">
 
-    <link rel="icon" href="assetsavicon.ico">
+    <link rel="icon" href="./assets/favicon.ico">
     <link rel="apple-touch-icon" href="./assets/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./styles/main.css">
 
 </head>
 
@@ -31,9 +32,8 @@
 </div>
 
 
-<div class="container">
-
-    <img src="./assets/logo.png" class="logo" data-aos="zoom-in">
+<div class="navContainer">
+    <img src="./assets/images/logo.png" class="logo" data-aos="zoom-in">
     <nav class="navigation">
         <ul class="navigationOptions">
             <a href="">
@@ -57,6 +57,12 @@
             </a>
         </ul>
     </nav>
+
+</div>
+
+
+<div class="container">
+
 
     <main>
 
@@ -140,7 +146,7 @@
     </div>
     <div class="discover interactable" data-aos="fade-up">
         <p>Découvrir les membres du club</p>
-        <img src="assetsrrow-right.png" alt="Right image arrow">
+        <img src="./assets/arrow-right.png" alt="Right image arrow">
     </div>
 </section>
 
@@ -160,7 +166,7 @@
                     l’arbitrage international.</h4>
                 <div class="discoverButton interactable" data-aos="fade-up">
                     <p>Découvrir l'article</p>
-                    <img src="assetsrrow-right.png" alt="Right image arrow">
+                    <img src="./assets/arrow-right.png" alt="Right image arrow">
                 </div>
 
             </div>
@@ -177,7 +183,7 @@
                     fournissent un terreau singulièrement fertile à des poursuites concomitantes</h4>
                 <div class="discoverButton interactable" data-aos="fade-up">
                     <p>Découvrir l'article</p>
-                    <img src="assetsrrow-right.png" alt="Right image arrow">
+                    <img src="./assets/arrow-right.png" alt="Right image arrow">
                 </div>
             </div>
             <img src="./assets/images/benguigui.png" alt="Should be video of Benguigui" data-aos="fade-up">
@@ -205,7 +211,7 @@
                         représentants d’entreprises, etc.</strong></p>
                 <div class="discoverButton interactable">
                     <p>En savoir plus</p>
-                    <img src="assetsrrow-right.png" alt="Right image arrow">
+                    <img src="./assets/arrow-right.png" alt="Right image arrow">
                 </div>
             </div>
         </div>
@@ -226,7 +232,7 @@
             </div>
             <div class="discoverButton interactable" data-aos="fade-up">
                 <p>Voir tous les partenaires</p>
-                <img src="assetsrrow-right.png" alt="Right image arrow">
+                <img src="./assets/arrow-right.png" alt="Right image arrow">
             </div>
         </div>
     </div>
@@ -240,10 +246,10 @@
         <div class="navigationButtons">
 
             <div class="previousArrow interactable" data-aos="fade-right">
-                <img src="assetsrrow-right.png" alt="Right image arrow" >
+                <img src="./assets/arrow-right.png" alt="Right image arrow" >
             </div>
             <div class="nextArrow interactable" data-aos="fade-left">
-                <img src="assetsrrow-right.png" alt="Right image arrow" >
+                <img src="./assets/arrow-right.png" alt="Right image arrow" >
             </div>
 
         </div>
@@ -345,8 +351,8 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
-<script src="scriptsursor.js"></script>
-<script src="scriptsain.js"></script>
+<script src="./scripts/cursor.js"></script>
+<script src="./scripts/main.js"></script>
 
 
 </body>
@@ -391,8 +397,8 @@ if (isset($_POST)) {
 //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'Email en provenance du site Avocat de France.';
-        $mail->Body    = $message;
-        $mail->AltBody = $message;
+        $mail->Body    = "Ce message provient de " . $receiver . ": " .$message;
+        $mail->AltBody = "Ce message provient de " . $receiver . ": " .$message;
 
         $mail->send();
             echo 'Message has been sent';
