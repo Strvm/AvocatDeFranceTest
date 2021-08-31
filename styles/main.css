@@ -1,0 +1,527 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100%;
+  cursor: none;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 60vw;
+}
+.container .logo {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.navigation {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 15%;
+}
+.navigation ul {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+.navigation ul a {
+  color: #2D2D2D;
+  text-decoration: none;
+}
+.navigation ul li {
+  list-style: none;
+  margin-right: 50px;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-self: center;
+  flex: 0 0 auto;
+  margin-bottom: 80px;
+}
+
+.contentHolder {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.contentHolder img {
+  width: 100%;
+}
+
+.contentTitle {
+  font-family: "Poppins";
+  font-weight: bold;
+  padding-left: 4%;
+}
+
+.contentDate {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.contentText {
+  width: 70%;
+}
+
+.contentTextTitle {
+  font-family: "Seshat";
+  font-size: 2em;
+}
+
+.contentTextDescription {
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #8D8D8D;
+}
+
+.presidents {
+  background-color: #FFB563;
+  width: 100vw;
+  min-height: 1000px;
+  height: auto;
+  font-family: "Seshat";
+  color: white;
+  padding-bottom: 30px;
+}
+.presidents .container {
+  padding-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.presidents .president {
+  flex-basis: 33%;
+  width: 100%;
+}
+.presidents .president .presidentDescription {
+  font-family: "Poppins";
+}
+.presidents .discover {
+  font-family: "Seshat";
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: white;
+}
+.presidents .discover p {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+.presidents .discover img {
+  padding-top: 5px;
+}
+
+.sectionTitle {
+  font-family: "Seshat";
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.juridiqueContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 7%;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.juridiqueContainer .contentJuridiqueText {
+  display: flex;
+  flex-direction: column;
+}
+.juridiqueContainer .contentJuridiqueText h1, .juridiqueContainer .contentJuridiqueText h4 {
+  margin-top: 0px;
+}
+
+.discoverButton {
+  font-family: "Seshat";
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 60px;
+  background-color: #FFB563;
+}
+.discoverButton p {
+  margin-right: 5px;
+}
+.discoverButton img {
+  padding-top: 5px;
+}
+
+.club {
+  margin-bottom: 150px;
+}
+.club .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.club .sectionTitle {
+  width: auto;
+  height: auto;
+  margin: 0;
+  font-size: 3.5rem;
+}
+.club .clubTextBox {
+  background-color: #B3DEC1;
+  width: 60%;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.club .clubTextBox .clubText {
+  margin: 0 auto;
+  width: 70%;
+}
+.club .clubTextBox .clubText .clubDescription {
+  font-family: "Poppins";
+}
+.club .clubTextBox .clubText .discoverButton {
+  background-color: white;
+  color: black;
+}
+
+.partners .sectionTitle {
+  width: auto;
+  height: auto;
+  margin: 0;
+  font-size: 3.5rem;
+}
+.partners .partnerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners .partnerLogos {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.partners .partnerLogos img {
+  max-width: 28%;
+  flex: 1;
+  flex-basis: 30%;
+}
+
+.videos .swiper {
+  height: 525px;
+}
+.videos .container {
+  max-height: 70%;
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+.videos .video {
+  max-width: 80%;
+}
+.videos .video a {
+  text-decoration: none;
+  color: black;
+  font-family: "Seshat";
+  font-size: 1.5rem;
+}
+.videos .video a:hover {
+  text-decoration: underline;
+}
+.videos .videosBox {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.previousArrow {
+  transform: scaleX(-1);
+}
+
+.navigationButtons {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 130px;
+  justify-content: space-between;
+}
+.navigationButtons .nextArrow, .navigationButtons .previousArrow {
+  background-color: #FFB563;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  user-select: none;
+}
+.navigationButtons .nextArrow img, .navigationButtons .previousArrow img {
+  align-self: center;
+}
+
+.seshat {
+  font-family: "Seshat";
+  font-weight: normal;
+}
+
+.poppins {
+  font-family: "Poppins";
+}
+
+.contact {
+  margin-bottom: 150px;
+}
+.contact .contactForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact .contactForm input, .contact .contactForm select, .contact .contactForm label, .contact .contactForm textarea {
+  display: block;
+}
+.contact .contactForm select {
+  color: #848484;
+}
+.contact .contactForm div {
+  flex: 50%;
+}
+.contact .contactForm label {
+  font-family: "Seshat";
+  font-size: 30px;
+}
+.contact .contactForm input, .contact .contactForm textarea {
+  margin: 15px 0;
+  font-family: Poppins;
+  font-size: 14px;
+  border: none;
+  border-bottom: solid 1px #DCDCDC;
+  transition: border-bottom 400ms ease-in-out;
+}
+.contact .contactForm input:hover, .contact .contactForm input:focus, .contact .contactForm textarea:hover, .contact .contactForm textarea:focus {
+  border-bottom: solid 1px #FFB563;
+  transition: border-bottom 400ms ease-in-out;
+}
+.contact .contactForm span {
+  color: #FFB563;
+}
+.contact .contactForm textarea {
+  width: 100%;
+}
+.contact .contactForm select {
+  margin: 15px 0;
+  border: none;
+}
+.contact .submitContactForm {
+  border: none;
+  background-color: #FFB563;
+  width: 120px;
+  height: 50px;
+  font-family: "Seshat";
+  font-size: 1.1rem;
+}
+
+.footer {
+  padding-bottom: 150px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer a {
+  font-family: "Poppins";
+  text-decoration: none;
+  color: black;
+}
+
+/*
+CURSOR
+*/
+.cursor-container {
+  z-index: 10;
+  pointer-events: none;
+}
+.cursor-container .pointer {
+  z-index: 10;
+  width: 5pt;
+  height: 5pt;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.5pt;
+  left: -2.5pt;
+  transform: translate(0, 0);
+  transition: all 0.05s ease;
+}
+.cursor-container .cursor-wrapper {
+  pointer-events: none;
+  z-index: 10;
+  position: absolute;
+  top: -15pt;
+  left: -15pt;
+  transform: translate(0, 0);
+  width: 30pt;
+  height: 30pt;
+  transition: all 0.1s ease;
+}
+.cursor-container .cursor-wrapper .cursor {
+  pointer-events: none;
+  z-index: 10;
+  width: 30pt;
+  height: 30pt;
+  border: 1pt solid black;
+  border-radius: 50%;
+  transition: width 100ms ease, height 100ms ease;
+  transform: rotate(90deg);
+}
+
+.blackCircle {
+  position: absolute;
+  z-index: -1;
+  width: 200px !important;
+  height: 200px;
+  top: 60%;
+  left: 93%;
+}
+
+.blackAndWhiteCircle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 258%;
+  left: 81%;
+  z-index: 1;
+}
+
+.greenCircle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 380%;
+  left: 21%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .navigation .dot {
+    display: none;
+  }
+  .navigation ul {
+    padding: 0;
+  }
+  .navigation .navigationOptions {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .multipleContent {
+    flex-direction: column;
+  }
+
+  .contentHolder {
+    width: auto;
+  }
+
+  .contentText {
+    width: 100%;
+  }
+
+  .president {
+    flex-basis: 100% !important;
+  }
+  .president img {
+    width: 100%;
+  }
+
+  .juridiqueContainer {
+    flex-direction: column;
+    align-items: normal;
+    margin-bottom: 100px;
+  }
+  .juridiqueContainer .discoverButton {
+    margin-bottom: 30px;
+  }
+
+  .club .container {
+    flex-direction: column;
+    justify-content: normal;
+  }
+  .club .clubTextBox {
+    height: auto;
+    width: 100%;
+  }
+  .club .clubTextBox .discoverButton {
+    margin: 0 auto;
+  }
+
+  .partners .partnerLogos {
+    flex-direction: column;
+    align-content: center;
+  }
+  .partners .partnerLogos img {
+    max-width: none;
+  }
+
+  .videos .container {
+    overflow: visible;
+    margin-bottom: 260px;
+  }
+  .videos .video {
+    max-width: 100%;
+  }
+  .videos .navigationButtons {
+    margin: 0 -15%;
+  }
+
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer .container a {
+    margin: 10px;
+  }
+
+  .cursor-container {
+    display: none;
+  }
+
+  .blackAndWhiteCircle {
+    top: 429%;
+    transform: rotate(241deg) !important;
+  }
+
+  .greenCircle {
+    top: 1030%;
+    left: -42%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
